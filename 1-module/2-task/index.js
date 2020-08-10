@@ -10,7 +10,8 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  let regex = /^[а-яёА-ЯЁA-Za-z]{4,}\S*$/;
+  return regex.test(name);
 }
 
 function sayHello() {

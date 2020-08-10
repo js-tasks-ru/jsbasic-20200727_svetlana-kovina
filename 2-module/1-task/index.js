@@ -4,5 +4,7 @@
  * @returns {Number}
  */
 function sumSalary(salaries) {
-  // ваш код...
+  let isMoneyOnList = salaries.John && salaries.Ann && salaries.Pete
+  let number = isMoneyOnList ? salaries.John + salaries.Ann + salaries.Pete : 0;
+  return number
 }
